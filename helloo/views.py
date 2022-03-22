@@ -6,14 +6,16 @@ def index(request):
     return HttpResponse("Hello")
     
 def brian(request):
-    return HttpResponse("Greetings, Brian")
+    return HttpResponse("Hello, Brian")
 
 def Love(request):
-    return HttpResponse("hello, Love!")
+    return HttpResponse("Hello, Love!")
 
 def David(request):
-    return HttpResponse("What's up David?")
+    return HttpResponse("Hello, David?")
+
 def greet(request, name):
-    return HttpResponse(f"Hello, {name}"),
+    # add capitalize #
+    return HttpResponse(f"Hello, {name.capitalize()}!")
 
     
