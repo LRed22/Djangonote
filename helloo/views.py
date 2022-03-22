@@ -13,3 +13,7 @@ def Love(request):
 
 def David(request):
     return HttpResponse("What's up David?")
+def greet(request, name):
+    return HttpResponse(f"Hello, {name}"),
+
+    
